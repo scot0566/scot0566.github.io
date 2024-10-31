@@ -4,10 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>scot0566 - Midterm</title>
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <body>
+    <div class="container">
+    <header>
+        <h1>Lone Starfish</h1>
+        <img class="sfheader" src="images/lone-starfish-wide.jpg" alt="Lone Starfish heading image">
+
+        <!-- Navigation tab -->
+        <nav>
+                <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="#article-1">STORY</a></li>
+                  <li><a href="#contact-section">CONTACT</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="article-1" id="article-1">
+            <h2>Life of a Starfish</h2>
+            <img class="starfish" src="images/lone-starfish.jpg" alt="Picture of a lone Starfish">
+            <p class="p1">Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
+            </p>
+        </article>
+
+        <section class="facts">
+            <h3>Facts About Starfish</h3>
+            <ul>
+                <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.ra.</li>
+                <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+                <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+                <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+            </ul>
+        </section>
+
+        <section class="contact-section" id="contact-section">
+            <h2>Contact to learn more</h2>
+            <form class="contact-form">
+                <div class="fname">
+                    <label for="fname">Your Name</label><br>
+                    <input type="text" name="fname" id="fname">
+                </div>
+
+                <div class="email">
+                    <label for="email">Your Email</label><br>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="message">
+                    <label for="message">Your Message</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <!-- Radio Buttons -->
+                 <div class="newsletter">
+                    <p>Would you like to visit the starfish?</p>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="visit" value="yes">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="visit" value="no">
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="maybe" name="visit" value="maybe">
+                    <!-- in order to ensure only one button can be selected, we use the name attribute. Yes, No, and Maybe belong to this question, and the class is visit. -->
+                 </div>
+                <input type="submit" value="SEND">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&#169; Lone Starfish</p>
+    </footer>
+</div>
 </body>
 </html>
