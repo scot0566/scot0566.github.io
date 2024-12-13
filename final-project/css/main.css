@@ -49,3 +49,353 @@ table {
 
 
 /* ====== MY CSS ====== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+}
+
+/* ===== HEADER ===== */
+
+header .home-logo {
+	background-color: #c78c06;
+	padding-bottom: 10px;
+}
+
+.star-logo {
+	margin-bottom: 50px;
+}
+
+.container {
+	position: relative;
+	padding: 10px;
+	background-color: #222;
+}
+
+header .home-logo li {
+	text-align: center;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    padding: 10px 0 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+	/* removed the underline from text with an href link in the navigation list */
+	color: #c78c06;
+    /* inherits colour from parent element */
+}
+
+header .home-logo li {
+	list-style: none;
+}
+
+header .home-logo li a {
+	text-decoration: none;
+	/* removed the underline from text with an href link in the navigation list */
+	color: #222;
+}
+
+/* search bar */
+.search {
+	width: 100%;
+	padding: 5px;
+	margin: 10px 0 10px 0;
+}
+
+/* editing my html magnifying glass */
+.fa-magnifying-glass {
+	font-size: 20px;
+	color: #c78c06;
+	border: solid 1px #c78c06;
+	padding: 5px;
+}
+
+.fa-magnifying-glass:hover {
+	cursor: pointer;
+	color: #222;
+	background-color: #c78c06;
+	border: solid 1px #222;
+}
+
+.flex {
+	display: flex;
+	/* ensures elements are side by side (on the same line) */
+	align-items: center;
+}
+
+/* ===== WELCOME ===== */
+
+body .welcome {
+    background-color: #333;
+    color: white;
+    background-image: url("../images/main-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	padding: 60px 0 60px 0;
+}
+
+body .welcome .welcome-info {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.btn-title {
+	font-size: 1rem;
+}
+
+.welcome .welcome-info h1 {
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 80px;
+	padding: 10px 0 10px 0;
+}
+
+p {
+	line-height: 18px;
+}
+
+.welcome .connect-btn a {
+	text-decoration: none;
+	color: #222;
+}
+
+.fa-play {
+	color: #222;
+	padding-left: 14px;
+}
+
+.welcome .connect-btn {
+	padding: 30px;
+	background-color: #c78c06;
+	width: 210px;
+	margin-top: 10px;
+}
+
+/* ===== ABOUT US ===== */
+
+.about-us {
+	background-color: #ffe6ac;
+	padding: 10px;
+}
+
+.about-us .ping-pong {
+	width: 100%;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 80px;
+}
+
+/* ===== OUR SERVICES ===== */
+
+.wrapper {
+	padding: 10px;
+}
+
+.wrapper-img {
+	width: 100%;
+}
+
+h3 {
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+}
+
+.wrapper .btn-title a {
+	text-decoration: none;
+	color: white;
+}
+
+.wrapper .fa-play {
+	color: white;
+}
+
+.wrapper section {
+	background-color: #ffe6ac;
+}
+
+.info {
+	padding: 10px;
+}
+
+.digital-btn {
+	padding: 30px;
+	background-color: black;
+	width: 182px;
+	margin-top: 10px;
+}
+
+.marketing {
+	margin-top: 10px;
+}
+
+.marketing-btn {
+	padding: 30px;
+	background-color: black;
+	width: 210px;
+	margin-top: 10px;
+}
+
+.video-production {
+	margin-top: 10px;
+}
+
+.video-btn {
+	padding: 30px;
+	background-color: black;
+	width: 177px;
+	margin-top: 10px;
+}
+
+.web-development {
+	margin-top: 10px;
+}
+
+.web-btn {
+	padding: 30px;
+	background-color: black;
+	width: 168px;
+	margin-top: 10px;
+}
+
+.print {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.print-btn {
+	padding: 30px;
+	background-color: black;
+	width: 171px;
+	margin-top: 10px;
+}
+
+/* ===== VISION ===== */
+
+.our-vision {
+    color: white;
+    background-image: url("../images/vision.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	padding: 10px 0 10px 0;
+}
+
+.learn-btn {
+	padding: 30px;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 178px;
+	margin-top: 10px;
+	border: solid 1px #c78c06;
+}
+
+.our-vision .btn-title a {
+	text-decoration: none;
+	color: white;
+}
+
+.our-vision .fa-play {
+	color: white;
+}
+
+/* ===== OUR TEAM ===== */
+
+.wrapper2 {
+	padding: 10px;
+}
+
+.wrapper2-img {
+	width: 100%;
+}
+
+.wrapper2 .john-doe, .bob-rite {
+	background-color: #ffe6ac;
+}
+
+.wrapper2 .bob-rite {
+	margin-top: 10px;
+}
+
+h4 {
+	font-weight: bold;
+	border-bottom: solid 2px #c78c06;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+/* ===== CONTACT US ====== */
+
+#fname {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#email {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#message {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.contact-form .message textarea {
+	resize: none;
+}
+
+
+
+/* ===== HOURS OF OPERATION TABLE ===== */
+
+table {
+	width: 100%;
+}
+
+table, th, td {
+	border: 1px solid;
+	padding: 10px;
+  }
+
+  th {
+	background-color: #ffe6ac;
+  }
+
+.send-btn {
+	background-color: #222;
+	color: #c78c06;
+	border: 1px solid #c78c06;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+/* ===== MAP ===== */
+
+iframe {
+    width: 100%;
+    border: 0;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+	background-color: #222;
+	padding: 20px;
+	color: #c78c06;
+}
+
+footer a {
+	color: #c78c06;
+}

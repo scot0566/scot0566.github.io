@@ -4,121 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>scot0566 - Final Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a18017d505.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div class="container">
         <header>
-            <img src="images/logo.png" alt="Logo">
-            <!-- Beginning the navigation tab -->
+            <div class="home-logo">
+                <img src="images/logo.png" alt="Logo" class="star-logo">
+                <!-- Beginning the navigation tab -->
+                    <ul>
+                        <li><a href="index.html" class="current">Home</a></li>
+                    </ul>
+            </div>
             <nav>
                 <div class="navigation">
                     <ul>
-                        <li><a href="index.html" class="current">Home</a></li>
                         <li><a href="#about-us-section">About Us</a></li>
                         <li><a href="#services-section">Services</a></li>
                         <li><a href="#team-section">Team</a></li>
                         <li><a href="#contact-section">Contact</a></li>
                     </ul>
-                    <input type="text" name="search" id="search" placeholder="Search">
-                    <!-- Adding the magnifying glass text symbol -->
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="flex">
+                        <input type="text" name="search" id="search" placeholder="Search" class="search">
+                        <!-- Adding the magnifying glass text symbol -->
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 </div>
             </nav>
         </header>
 
         <main>
-            <img src="images/main-banner.jpg" alt="main-banner">
             <section class="welcome">
-                <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus eros sapien, ac convallis erat dignissim non. Suspendisse interdum pellentesque diam, nec mattis ipsum porta vel. Quisque lobortis ultrices vestibulum. Donec ullamcorper ut tellus nec volutpat. Sed non facilisis arcu. Curabitur interdum orci sit amet pulvinar porttitor. Cras in quam suscipit est mollis bibendum ut placerat felis.</p>
-                <!-- using div tags as buttons -->
-                <div class="connect-btn"><a href="index.html">Connect with us</a>
-                <i class="fa-solid fa-play"></i>
+                <div class="welcome-info">
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus eros sapien, ac convallis erat dignissim non. Suspendisse interdum pellentesque diam, nec mattis ipsum porta vel. Quisque lobortis ultrices vestibulum.</p>
+                    <!-- using div tags as buttons -->
+                    <div class="connect-btn btn-title"><a href="index.html">Connect with us</a>
+                        <i class="fa-solid fa-play"></i>
+                    </div>
                 </div>
             </section>
+        </div>
 
-            <section class="about-us">
-                <img src="images/about-us.jpg" alt="Ping Pong Table">
+            <section class="about-us" id="about-us-section">
+                <img src="images/about-us.jpg" alt="Ping Pong Table" class="ping-pong">
                 <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus eros sapien, ac convallis erat dignissim non. Suspendisse interdum pellentesque diam, nec mattis ipsum porta vel. Quisque lobortis ultrices vestibulum. Donec ullamcorper ut tellus nec volutpat. Sed non facilisis arcu. Curabitur interdum orci sit amet pulvinar porttitor.</p>
-                <p>Cras in quam suscipit est mollis bibendum ut placerat felis. Nulla placerat, risus sit amet efficitur convallis, lectus sem accumsan sapien, ac aliquam nisl est non libero. Aliquam erat volutpat. Mauris ac neque in elit commodo porttitor sed sit amet velit. Morbi eget rhoncus justo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus eros sapien, ac convallis erat dignissim non. Suspendisse interdum pellentesque diam, nec mattis ipsum porta vel. Quisque lobortis ultrices vestibulum.</p> <br>
+                <p>Cras in quam suscipit est mollis bibendum ut placerat felis. Nulla placerat, risus sit amet efficitur convallis, lectus sem accumsan sapien, ac aliquam nisl est non libero. Aliquam erat volutpat.</p>
             </section>
-
             <!-- Added a wrapper to this section since the background colour is different than the last sections -->
-            <div class="wrapper">
+             <div class="wrapper">
                 <h2>Our Services</h2>
-                <section class="digital-transformation">
-                    <img src="images/digital.jpg" alt="Laptop and a phone">
-                    <h3>Digital Transformation</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat risus, ornare ut risus ac, imperdiet cursus erat. Duis fermentum, urna sit amet posuere blandit, tortor enim interdum erat, sed commodo lorem metus venenatis nunc.</p>
-                    <div class="digital-btn"><a href="index.html">Digital Plans</a>
-                    <i class="fa-solid fa-play"></i>
-                    </div>
+                <section class="digital-transformation" id="services-section">
+                    <img src="images/digital.jpg" alt="Laptop and a phone" class="wrapper-img">
+                        <div class="info">
+                            <h3>Digital Transformation</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat risus, ornare ut risus ac, imperdiet cursus erat. Duis fermentum, urna sit amet posuere blandit, tortor enim interdum erat, sed commodo lorem metus venenatis nunc.</p>
+                            <div class="digital-btn btn-title"><a href="index.html">Digital Plans</a>
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
                 </section>
 
                 <section class="marketing">
-                    <img src="images/marketing.jpg" alt="Laptop">
-                    <h3>Marketing</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat risus, ornare ut risus ac, imperdiet cursus erat. Duis fermentum, urna sit amet posuere blandit, tortor enim interdum erat, sed commodo lorem metus venenatis nunc.</p>
-                    <div class="marketing-btn"><a href="index.html">Marketing Plans</a>
-                    <i class="fa-solid fa-play"></i>
+                    <img src="images/marketing.jpg" alt="Laptop" class="wrapper-img">
+                    <div class="info">
+                        <h3>Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat risus, ornare ut risus ac, imperdiet cursus erat. Duis fermentum, urna sit amet posuere blandit, tortor enim interdum erat, sed commodo lorem metus venenatis nunc.</p>
+                        <div class="marketing-btn btn-title"><a href="index.html">Marketing Plans</a>
+                            <i class="fa-solid fa-play"></i>
+                        </div>
                     </div>
                 </section>
 
                 <section class="video-production">
-                    <img src="images/video.jpg" alt="Phone displaying YouTube logo">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat risus, ornare ut risus ac, imperdiet cursus erat. Duis fermentum, urna sit amet posuere blandit, tortor enim interdum erat, sed commodo lorem metus venenatis nunc.</p>
-                    <div class="video-btn"><a href="index.html">Video Plans</a>
-                    <i class="fa-solid fa-play"></i>
+                    <img src="images/video.jpg" alt="Phone displaying YouTube logo" class="wrapper-img">
+                    <div class="info">
+                        <h3>Video Production</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat risus, ornare ut risus ac, imperdiet cursus erat. Duis fermentum, urna sit amet posuere blandit, tortor enim interdum erat, sed commodo lorem metus venenatis nunc.</p>
+                        <div class="video-btn btn-title"><a href="index.html">Video Plans</a>
+                            <i class="fa-solid fa-play"></i>
+                        </div>
                     </div>
                 </section>
 
                 <section class="web-development">
-                    <img src="images/web.jpg" alt="Phone on a notebook">
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat risus, ornare ut risus ac, imperdiet cursus erat. Duis fermentum, urna sit amet posuere blandit, tortor enim interdum erat, sed commodo lorem metus venenatis nunc.</p>
-                    <div class="web-btn"><a href="index.html">Web Plans</a>
-                    <i class="fa-solid fa-play"></i>
-                    </div>
+                    <img src="images/web.jpg" alt="Phone on a notebook" class="wrapper-img">
+                        <div class="info">
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat risus, ornare ut risus ac, imperdiet cursus erat. Duis fermentum, urna sit amet posuere blandit, tortor enim interdum erat, sed commodo lorem metus venenatis nunc.</p>
+                            <div class="web-btn btn-title"><a href="index.html">Web Plans</a>
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
                 </section>
 
                 <section class="print">
-                    <img src="images/print.jpg" alt="Mailboxes">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat risus, ornare ut risus ac, imperdiet cursus erat. Duis fermentum, urna sit amet posuere blandit, tortor enim interdum erat, sed commodo lorem metus venenatis nunc.</p>
-                    <div class="print-btn"><a href="index.html">Print Plans</a>
-                    <i class="fa-solid fa-play"></i>
+                    <img src="images/print.jpg" alt="Mailboxes" class="wrapper-img">
+                    <div class="info">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat risus, ornare ut risus ac, imperdiet cursus erat. Duis fermentum, urna sit amet posuere blandit, tortor enim interdum erat, sed commodo lorem metus venenatis nunc.</p>
+                        <div class="print-btn btn-title"><a href="index.html">Print Plans</a>
+                            <i class="fa-solid fa-play"></i>
+                        </div>
                     </div>
                 </section>
             </div>
 
-            <section class="our-vision">
-                <img src="images/vision.jpg" alt="Paper boats">
-                <h3>Our Vision</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh risus, tempus a lobortis posuere, maximus sit amet purus. Donec bibendum ultricies mauris ac interdum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <div class="learn-btn"><a href="index.html">Learn More</a>
-                <i class="fa-solid fa-play"></i>
-                </div>
-            </section>
+                <section class="our-vision">
+                    <div class="info">
+                        <h3>Our Vision</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh risus, tempus a lobortis posuere, maximus sit amet purus. Donec bibendum ultricies mauris ac interdum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <div class="learn-btn btn-title"><a href="index.html">Learn More</a>
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                </section>
 
             <!-- Adding another wrapper because the background changes again -->
-            <div class="wrapper2">
+              <div class="wrapper2">
                 <h2>Our Team</h2>
-                <section class="john-doe">
-                    <img src="images/john.jpg" alt="John Doe">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et euismod est. Nullam massa nulla, vehicula sit amet justo nec, sollicitudin laoreet nulla. Sed auctor vestibulum ex, a tempus metus auctor sit amet. Nunc non nisi eget lacus posuere tincidunt ut id metus. Morbi feugiat fringilla finibus.</p>
+                <section class="john-doe" id="team-section">
+                    <img src="images/john.jpg" alt="John Doe" class="wrapper2-img">
+                    <div class="info">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et euismod est. Nullam massa nulla, vehicula sit amet justo nec, sollicitudin laoreet nulla. Sed auctor vestibulum ex, a tempus metus auctor sit amet. Nunc non nisi eget lacus posuere tincidunt ut id metus. Morbi feugiat fringilla finibus.</p>
+                    </div>
                 </section>
 
                 <section class="bob-rite">
-                    <img src="images/bob.jpg" alt="Bob Rite">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et euismod est. Nullam massa nulla, vehicula sit amet justo nec, sollicitudin laoreet nulla. Sed auctor vestibulum ex, a tempus metus auctor sit amet. Nunc non nisi eget lacus posuere tincidunt ut id metus. Morbi feugiat fringilla finibus.</p>
+                    <img src="images/bob.jpg" alt="Bob Rite" class="wrapper2-img">
+                    <div class="info">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-owner</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et euismod est. Nullam massa nulla, vehicula sit amet justo nec, sollicitudin laoreet nulla. Sed auctor vestibulum ex, a tempus metus auctor sit amet. Nunc non nisi eget lacus posuere tincidunt ut id metus. Morbi feugiat fringilla finibus.</p>
+                    </div>
                 </section>
 
                 <section class="contact-section" id="contact-section">
@@ -137,9 +163,9 @@
         
                         <div class="message">
                             <label for="message">Message</label><br>
-                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            <textarea name="message" id="message" rows="10"></textarea>
                         </div>
-                        <input type="submit" value="Send">
+                        <input type="submit" value="Send" class="send-btn">
                     </form>
                 </section>
 
@@ -186,6 +212,5 @@
             <p>&#169; Copyright Three Star Media, 2020</p>
             <p>All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
         </footer>
-    </div>
-</body>
+    </body>
 </html>
